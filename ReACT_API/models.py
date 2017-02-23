@@ -7,5 +7,5 @@ class Atleta(models.Model):
     idade = models.IntegerField()
     peso = models.DecimalField(max_digits=4, decimal_places=2)
     gênero = models.CharField(max_length=9)
-    deh_nascimento = models.CharField(max_length=9)
+    deh_nascimento = models.DateField()
     deh_cadastro = models.DateField(default = datetime.datetime.now())
